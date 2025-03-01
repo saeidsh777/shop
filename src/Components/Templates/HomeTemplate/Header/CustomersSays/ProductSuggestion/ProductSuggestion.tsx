@@ -8,8 +8,7 @@ export default function ProductSuggestion() {
             <div className="w-48 h-48 bg-white overflow-hidden">
                 <Link href={'/'}>
                     <Image
-                        className="w-full h-full transition-all group-hover:scale-110"
-                        objectFit="cover"
+                        className="w-full h-full transition-all group-hover:scale-110 object-cover"
                         src="/images/home/shirt.png"
                         width={500}
                         height={500}

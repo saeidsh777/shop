@@ -7,9 +7,10 @@ export default function HeaderTitle() {
                 Exclusive Collections
                 <br /> For Z-Generation
             </h1>
-            <div className='flex items-center gap-2'>
-                <GlobalBtn bg="white" text="black" />
-                <GlobalBtn bg="transparent" text="white" />
+            <div className="flex items-center gap-2">
+                <GlobalBtn type={1} />
+                <GlobalBtn type={2} />
+                <GlobalBtn type={3} />
             </div>
         </div>
     );
