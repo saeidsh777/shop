@@ -3,6 +3,8 @@ import Arrow from '../../Arrow/Arrow';
 
 interface color {
     type: 1 | 2 | 3;
+    href: string;
+    title:string;
 }
 
 const colorLogics: Record<
@@ -46,16 +48,16 @@ const colorLogics: Record<
     },
 };
 
-export default function GlobalBtn({ type }: color) {
+export default function GlobalBtn({ type, href,title }: color) {
     return (
         <Link
             className={`group border ${colorLogics[type].b} ${colorLogics[type].bg} ${colorLogics[type].t} ${colorLogics[type].bbg} ${colorLogics[type].hb} ${colorLogics[type].ht} relative px-8 py-3 transition-all duration-[500ms] ease-out font-medium block w-fit before:absolute before:block before:content-[''] before:left-0 before:top-0 before:w-0 before:h-full hover:before:w-full before:transition-all before:ease-out before:duration-[500ms] overflow-hidden`}
-            href={'/'}
+            href={href}
         >
             <div
                 className={`relative flex items-center gap-4 ${colorLogics[type].ght}`}
             >
-                <span>Shop New</span>
+                <span>{title}</span>
                 <Arrow />
             </div>
         </Link>

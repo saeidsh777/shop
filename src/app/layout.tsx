@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Topbar from '@/Components/Modules/Topbar/Topbar';
+import StoreProvider from '@/Components/Modules/StoreProvider/StoreProvider';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -20,8 +21,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body cz-shortcut-listen="true" className={inter.className}>
-                <Topbar />
-                {children}
+                <StoreProvider>
+                    <Topbar />
+                    {children}
+                </StoreProvider>
             </body>
         </html>
     );

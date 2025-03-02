@@ -13,12 +13,13 @@ export default function ProductSuggestion() {
                         width={500}
                         height={500}
                         alt="product image"
+                        priority
                     />
                 </Link>
             </div>
             <div className="flex items-center justify-between mt-2">
                 <span className="text-xs">Explore New Arrivals</span>
-                <Arrow/>
+                <Arrow />
             </div>
         </div>
     );

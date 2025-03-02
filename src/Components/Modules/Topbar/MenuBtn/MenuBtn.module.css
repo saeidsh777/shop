@@ -1,0 +1,26 @@
+.line {
+    width: 2rem;
+    height: 0.1rem;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+
+.up {
+    transform-origin: 0 0;
+    transform: rotate(-37deg);
+    -webkit-transform: rotate(-37deg);
+    -moz-transform: rotate(-37deg);
+    -ms-transform: rotate(-37deg);
+    -o-transform: rotate(-37deg);
+}
+.down {
+    transform-origin: 0 0;
+    transform: rotate(37deg);
+    -webkit-transform: rotate(37deg);
+    -moz-transform: rotate(37deg);
+    -ms-transform: rotate(37deg);
+    -o-transform: rotate(37deg);
+}

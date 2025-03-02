@@ -8,9 +8,8 @@ export default function HeaderTitle() {
                 <br /> For Z-Generation
             </h1>
             <div className="flex items-center gap-2">
-                <GlobalBtn type={1} />
-                <GlobalBtn type={2} />
-                <GlobalBtn type={3} />
+                <GlobalBtn type={1} href="/shop" title="Shop New"/>
+                <GlobalBtn type={2} href="/" title="Categories"/>
             </div>
         </div>
     );
