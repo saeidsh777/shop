@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+        @apply font-semibold text-4xl md:text-6xl;
+        letter-spacing: -.06em;
+    }
+}
