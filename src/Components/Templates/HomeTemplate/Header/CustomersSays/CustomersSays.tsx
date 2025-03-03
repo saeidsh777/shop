@@ -25,7 +25,7 @@ export default function CustomersSays() {
                     if (index > 0 && index <= qElems.current.length) {
                         qElems.current[index - 1].classList.remove(styles.move);
                     }
-                    
+
                     qElems.current[index].classList.add(styles.move);
                     index++;
                     setTimeout(showText, 5000);
@@ -37,9 +37,9 @@ export default function CustomersSays() {
     }, [qElems]);
 
     return (
-        <div>
+        <div className="absolute w-[calc(100%_-_2rem)] bottom-0 md:static">
             <p className="mb-4">What our customers says</p>
-            <blockquote className="text-2xl font-bold w-96 h-16 overflow-hidden relative block">
+            <blockquote className="text-2xl font-bold md:w-96 h-16 overflow-hidden relative block">
                 <q className={styles.q} ref={pushRef}>
                     Lorem ipsum dolor sit amet consectetur
                 </q>

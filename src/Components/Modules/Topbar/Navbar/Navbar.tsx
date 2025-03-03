@@ -11,45 +11,45 @@ export default function Navbar() {
         <nav
             className={`absolute top-full left-0 ${
                 pathName === '/' ? 'bg-black' : 'bg-white'
-            } md:bg-transparent md:block md:translate-y-0 md:static w-full md:w-fit md:visible md:opacity-100 ${
+            } lg:bg-transparent lg:block lg:translate-y-0 lg:static w-full lg:w-fit lg:visible lg:opacity-100 ${
                 isShow
                     ? 'opacity-100 visible transition-all translate-y-0'
                     : 'opacity-0 invisible transition-all translate-y-4'
-            } md:block`}
+            } lg:block`}
         >
-            <ul className="flex flex-col md:flex-row md:items-start gap-6 container py-8 md:py-0">
+            <ul className="flex flex-col lg:flex-row lg:items-start gap-6 container py-8 lg:py-0">
                 <li>
-                    <Link href="/" className="text-3xl md:text-sm">
+                    <Link href="/" className="text-3xl lg:text-sm">
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link href="/shop" className="text-3xl md:text-sm">
+                    <Link href="/products" className="text-3xl lg:text-sm">
                         Shop
                     </Link>
                 </li>
                 <li>
-                    <Link href="/" className="text-3xl md:text-sm">
+                    <Link href="/" className="text-3xl lg:text-sm">
                         Category
                     </Link>
                 </li>
                 <li>
-                    <Link href="/" className="text-3xl md:text-sm">
+                    <Link href="/" className="text-3xl lg:text-sm">
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link href="/" className="text-3xl md:text-sm">
+                    <Link href="/" className="text-3xl lg:text-sm">
                         Reviews
                     </Link>
                 </li>
                 <li>
-                    <Link href="/" className="text-3xl md:text-sm">
+                    <Link href="/" className="text-3xl lg:text-sm">
                         FAQ
                     </Link>
                 </li>
                 <li>
-                    <Link href="/" className="text-3xl md:text-sm">
+                    <Link href="/" className="text-3xl lg:text-sm">
                         Journal
                     </Link>
                 </li>

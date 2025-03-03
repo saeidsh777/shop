@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function ProductSuggestion() {
     return (
-        <div className="group">
+        <div className="group hidden md:block">
             <div className="w-48 h-48 bg-white overflow-hidden">
                 <Link href={'/'}>
                     <Image

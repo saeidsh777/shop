@@ -11,7 +11,7 @@ export default function MenuBtn() {
 
     return (
         <div
-            className="flex flex-col gap-2 cursor-pointer md:hidden"
+            className="flex flex-col gap-2 cursor-pointer lg:hidden"
             onClick={() => dispatch(show())}
         >
             <div
