@@ -2,13 +2,13 @@ import Link from 'next/link';
 import Arrow from '../../Arrow/Arrow';
 
 interface color {
-    type: 1 | 2 | 3;
+    type: 1 | 2 | 3 | 4;
     href: string;
     title:string;
 }
 
 const colorLogics: Record<
-    1 | 2 | 3,
+    1 | 2 | 3 | 4,
     {
         b: string;
         bg: string;
@@ -44,6 +44,15 @@ const colorLogics: Record<
         ht: 'hover:text-white',
         bbg: 'before:bg-white/20',
         hb: 'hover:border-white/20',
+        ght: 'group-hover:text-white',
+    },
+    4: {
+        b: 'border-black',
+        bg: 'bg-transparent',
+        t: 'text-black',
+        ht: 'hover:text-white',
+        bbg: 'before:bg-black',
+        hb: 'hover:border-black',
         ght: 'group-hover:text-white',
     },
 };
