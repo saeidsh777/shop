@@ -1,7 +1,6 @@
 import ProductCard from '@/Components/Modules/Cards/ProductCard/ProductCard';
 import ProductLoder from '@/Components/Modules/Loders/ProductLoder/ProductLoder';
 import SectionTitle from '@/Components/Modules/Titels/SectionTitle/SectionTitle';
-import React from 'react';
 
 export default async function BestSellers() {
     try {
@@ -9,11 +8,7 @@ export default async function BestSellers() {
             'https://api.escuelajs.co/api/v1/products?offset=0&limit=8'
         );
 
-        if (res.status !== 200) {
-            console.log('object');
-        }
         const products = await res.json();
-
         interface Product {
             id: string;
             title: string;
@@ -23,7 +18,7 @@ export default async function BestSellers() {
         }
 
         return (
-            <div className="container">
+            <section className="container">
                 <div className="mb-12">
                     <SectionTitle title="Best Sellers" />
                 </div>
@@ -38,7 +33,7 @@ export default async function BestSellers() {
                         />
                     ))}
                 </div>
-            </div>
+            </section>
         );
     } catch (error) {
         console.log((error as Error).message);
