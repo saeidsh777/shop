@@ -25,8 +25,8 @@ export default function Topbar() {
                 divElm.current.style.background = `rgba(0, 0, 0, ${opacity}
                 )`;
             } else {
-                divElm.current.style.background = `rgba(0, 0, 0)`;
                 opacity = 100;
+                divElm.current.style.background = 'rgba(0, 0, 0)';
             }
         }
     };
