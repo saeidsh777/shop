@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import './globals.css';
 import Topbar from '@/Components/Modules/Topbar/Topbar';
 import StoreProvider from '@/Components/Modules/StoreProvider/StoreProvider';
+import Footer from '@/Components/Modules/Footer/Footer';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -24,6 +27,7 @@ export default function RootLayout({
                 <StoreProvider>
                     <Topbar />
                     {children}
+                    <Footer />
                 </StoreProvider>
             </body>
         </html>
