@@ -40,17 +40,7 @@ export default function Navbar() {
                 </li>
                 <li>
                     <Link href="/" className="text-3xl lg:text-sm">
-                        Reviews
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/" className="text-3xl lg:text-sm">
-                        FAQ
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/" className="text-3xl lg:text-sm">
-                        Journal
+                        Blog
                     </Link>
                 </li>
             </ul>
