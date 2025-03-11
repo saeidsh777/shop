@@ -6,8 +6,8 @@ import LoadingFetch from '@/Components/Modules/Loders/LoadingFetch/LoadingFetch'
 import AboutUs from './AboutUs/AboutUs';
 import Brands from './Brands/Brands';
 import LastProducts from './LastProducts/LastProducts';
-import Support from './Support/Support';
-import VisitOur from './VisitOur/VisitOur';
+import Support from '../../Modules/Support/Support';
+import VisitOur from '../../Modules/VisitOur/VisitOur';
 
 export default function HomeTemplate() {
     return (
