@@ -1,7 +1,5 @@
-import React from 'react'
+import AboutTemplate from '@/Components/Templates/AboutTemplate/AboutTemplate';
 
 export default function page() {
-  return (
-    <div>page</div>
-  )
+    return <AboutTemplate />;
 }
