@@ -34,7 +34,7 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/" className="text-3xl lg:text-sm">
+                    <Link href="/about" className="text-3xl lg:text-sm">
                         About
                     </Link>
                 </li>
