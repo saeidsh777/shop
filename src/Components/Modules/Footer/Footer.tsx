@@ -45,7 +45,7 @@ export default function Footer() {
                                 <li className="mb-4">
                                     <Link
                                         className="text-xs font-medium "
-                                        href={'/'}
+                                        href={'/about'}
                                     >
                                         ABOUT
                                     </Link>
