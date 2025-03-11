@@ -6,6 +6,7 @@ import './globals.css';
 import Topbar from '@/Components/Modules/Topbar/Topbar';
 import StoreProvider from '@/Components/Modules/StoreProvider/StoreProvider';
 import Footer from '@/Components/Modules/Footer/Footer';
+import FetchProvider from '@/Components/Modules/FetchProvider/FetchProvider';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -25,9 +26,11 @@ export default function RootLayout({
         <html lang="en">
             <body cz-shortcut-listen="true" className={inter.className}>
                 <StoreProvider>
-                    <Topbar />
-                    {children}
-                    <Footer />
+                    <FetchProvider>
+                        <Topbar />
+                        {children}
+                        <Footer />
+                    </FetchProvider>
                 </StoreProvider>
             </body>
         </html>

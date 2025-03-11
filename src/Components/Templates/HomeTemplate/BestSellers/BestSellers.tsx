@@ -4,17 +4,14 @@ import SectionTitle from '@/Components/Modules/Titels/SectionTitle/SectionTitle'
 
 export default async function BestSellers() {
     try {
-        const res = await fetch(
-            'https://api.escuelajs.co/api/v1/products?offset=0&limit=8'
-        );
+        const res = await fetch('https://fakestoreapi.com/products');
 
         const products = await res.json();
         interface Product {
-            id: string;
+            id: number;
             title: string;
             price: number;
-            images: string[];
-            slug: string;
+            image: string;
         }
 
         return (
@@ -23,13 +20,13 @@ export default async function BestSellers() {
                     <SectionTitle title="Best Sellers" />
                 </div>
                 <div className="grid grid-cols-1 auto-rows-auto sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
-                    {products.map((product: Product) => (
+                    {products.slice(0, 8).map((product: Product) => (
                         <ProductCard
+                            id={product.id}
                             key={product.id}
                             title={product.title}
                             price={product.price}
-                            image={product.images[0]}
-                            slug={product.slug}
+                            image={product.image}
                         />
                     ))}
                 </div>

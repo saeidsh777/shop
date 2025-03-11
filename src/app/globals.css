@@ -69,4 +69,8 @@
         left: auto !important;
         right: 3rem;
     }
+
+    .main{
+        padding-top: 10rem;
+    }
 }

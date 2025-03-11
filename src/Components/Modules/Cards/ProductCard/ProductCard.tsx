@@ -6,16 +6,16 @@ interface Props {
     title: string;
     price: number;
     image: string;
-    slug: string;
+    id: number;
 }
 
-export default function ProductCard({ title, price, image, slug }: Props) {
+export default function ProductCard({ title, price, image, id }: Props) {
     return (
         <div className="group">
-            <div className="h-auto w-full mb-4 overflow-hidden">
-                <Link href={`/products/${slug}`}>
+            <div className="h-[20rem] w-full mb-4">
+                <Link href={`/products/${id}`}>
                     <Image
-                        className="h-full w-full object-cover group-hover:scale-105 transition-all duration-500"
+                        className="h-full w-full object-contain group-hover:scale-105 transition-all duration-500"
                         src={image}
                         width={500}
                         height={500}
@@ -26,7 +26,7 @@ export default function ProductCard({ title, price, image, slug }: Props) {
             <div>
                 <Link
                     className="text-sm sm:text-lg md:text-xl tracking-[-.1px] line-clamp-1"
-                    href={`/products/${slug}`}
+                    href={`/products/${id}`}
                 >
                     {title}
                 </Link>

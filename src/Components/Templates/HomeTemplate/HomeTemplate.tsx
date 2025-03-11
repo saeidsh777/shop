@@ -5,7 +5,6 @@ import BestSellers from './BestSellers/BestSellers';
 import LoadingFetch from '@/Components/Modules/Loders/LoadingFetch/LoadingFetch';
 import AboutUs from './AboutUs/AboutUs';
 import Brands from './Brands/Brands';
-import Categories from './Categories/Categories';
 import LastProducts from './LastProducts/LastProducts';
 import Support from './Support/Support';
 import VisitOur from './VisitOur/VisitOur';
@@ -25,9 +24,6 @@ export default function HomeTemplate() {
                 </SectionTemplate>
                 <SectionTemplate>
                     <Brands />
-                </SectionTemplate>
-                <SectionTemplate>
-                    <Categories />
                 </SectionTemplate>
                 <SectionTemplate>
                     <Suspense fallback={<LoadingFetch />}>
