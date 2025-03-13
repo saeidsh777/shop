@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.0",
-    "aos": "^3.0.0-beta.6",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-content-loader": "^7.0.2",
