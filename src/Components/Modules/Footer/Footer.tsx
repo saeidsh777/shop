@@ -29,17 +29,9 @@ export default function Footer() {
                                 <li className="mb-4">
                                     <Link
                                         className="text-xs font-medium "
-                                        href={'/'}
+                                        href={'/products'}
                                     >
                                         SHOP
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className="text-xs font-medium "
-                                        href={'/'}
-                                    >
-                                        CATEGORY
                                     </Link>
                                 </li>
                                 <li className="mb-4">
