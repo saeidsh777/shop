@@ -1,3 +1,42 @@
+// export default function SigninForm() {
+//     const handleSubmit = async (formData: FormData) => {
+//         'use server';
+//         const name = formData.get('email');
+//         console.log(name);
+//     };
+
+//     return (
+//         <form action={handleSubmit}>
+//             <div className="mb-8">
+//                 <label className="text-gray-600 mb-2 block" htmlFor="email">
+//                     Email
+//                 </label>
+//                 <input
+//                     className="border border-gray-300 p-4 block focus-visible:border-black transition outline-none w-full"
+//                     type="email"
+//                     name="email"
+//                     id="email"
+//                     placeholder="Enter your email"
+//                 />
+//             </div>
+//             <div className="mb-8">
+//                 <label className="text-gray-600 mb-2 block" htmlFor="password">
+//                     Password
+//                 </label>
+//                 <input
+//                     className="border border-gray-300 p-4 block focus-visible:border-black transition outline-none w-full"
+//                     type="password"
+//                     name="password"
+//                     id="password"
+//                     placeholder="Enter your password"
+//                 />
+//             </div>
+//             <button type="submit" className="bg-black text-white py-2 w-full">
+//                 Login
+//             </button>
+//         </form>
+//     );
+// }
 'use client';
 
 import { useAppDispatch } from '@/hooks/useRedux';
