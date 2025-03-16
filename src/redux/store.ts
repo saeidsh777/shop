@@ -3,6 +3,7 @@ import showMenuReducer from './slices/showMenuSlice';
 import productsReducer from './slices/productsSlice';
 import cartReducer from './slices/cartSlice';
 import modalReducer from './slices/modalSlice';
+import authReducer from './slices/authSlice';
 
 export const store = configureStore({
     reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
         products: productsReducer,
         cart: cartReducer,
         modal: modalReducer,
+        auth: authReducer,
     },
 });
 
