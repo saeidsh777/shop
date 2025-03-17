@@ -5,6 +5,7 @@ import { RiUser3Line } from 'react-icons/ri';
 import { IoIosLogOut } from 'react-icons/io';
 import { CgProfile } from 'react-icons/cg';
 import { logout } from '@/redux/slices/authSlice';
+import { BiLogIn } from 'react-icons/bi';
 export default function UserIcon() {
     const login = useAppSelector((state) => state.auth.login);
     const dispatch = useAppDispatch();
@@ -26,7 +27,7 @@ export default function UserIcon() {
                         type="button"
                         aria-label="profile"
                     >
-                        <RiUser3Line />
+                        <BiLogIn />
                     </button>
                 </Link>
             )}
