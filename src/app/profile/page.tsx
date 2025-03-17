@@ -15,7 +15,12 @@ export default function Page() {
     }, [login]);
     return (
         <main className="main">
-            <div className="container">profile page</div>
+            <div className="container">
+                <iframe
+                    src="https://saeid-shojaei.vercel.app/"
+                    className="w-full h-svh border-8 p-2 border-gray-500 mb-8"
+                ></iframe>
+            </div>
         </main>
     );
 }
