@@ -5,18 +5,9 @@ import { RiUser3Line } from 'react-icons/ri';
 import { IoIosLogOut } from 'react-icons/io';
 import { CgProfile } from 'react-icons/cg';
 import { logout } from '@/redux/slices/authSlice';
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 export default function UserIcon() {
     const login = useAppSelector((state) => state.auth.login);
     const dispatch = useAppDispatch();
-    const router = useRouter();
-
-    useEffect(() => {
-        if (!login) {
-            router.push('/auth/signin');
-        }
-    }, [login]);
 
     return (
         <div className="group relative">

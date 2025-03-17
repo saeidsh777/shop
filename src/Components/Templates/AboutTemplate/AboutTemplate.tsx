@@ -88,7 +88,7 @@ export default function AboutTemplate() {
                     <div className="w-full">
                         <Image
                             className="w-full h-full object-cover"
-                            src={'/images/products/about-3.jpg'}
+                            src={'/images/products/about-4.jpg'}
                             alt="product image"
                             width={500}
                             height={500}
